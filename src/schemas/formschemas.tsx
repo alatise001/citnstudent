@@ -21,7 +21,7 @@ export const InformationFormSchema = z.object({
     .max(15, {
       message: "Phone number must be at most 15 characters.",
     })
-    .regex(/^\+?[1-9]\d{1,14}$/, {
+    .regex(/^(\+?[1-9]\d{1,14}|0\d{9,14})$/, {
       message: "Invalid phone number.",
     }),
 });
