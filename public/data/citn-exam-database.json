@@ -1008,5 +1008,20 @@
     "getQualificationDetails": {
       "description": "Function to retrieve qualification details including exemptions, required exams, and fees"
     }
+  },
+  "examinationApplication": {
+    "title": "STUDENT'S EXAMINATION APPLICATION",
+    "steps": [
+      "Log on to www.citn.org",
+      "Go to member login",
+      "Log in with username/membership no/e-mail address and password",
+      "Click on \"My membership\" on your profile",
+      "Click on \"apply for examination\" on the right hand side and fill the form",
+      "Click on Proceed to Payment to generate your reference code",
+      "Click on Proceed to Payment to generate your reference code",
+      "Pay online via Globalpay"
+    ],
+    "website": "www.citn.org",
+    "paymentMethod": "Globalpay"
   }
 }
