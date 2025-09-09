@@ -1,0 +1,1012 @@
+{
+  "examLevels": {
+    "foundation": {
+      "name": "Foundation",
+      "subjects": [
+        "Introduction to Taxation",
+        "Corporate",
+        "Business Law and Professional Ethics",
+        "Principles of Accounting and Economics at Foundation"
+      ],
+      "fees": {
+        "oneSubject": 30000,
+        "twoSubjects": 45000,
+        "threeSubjects": 60000,
+        "fourSubjects": 75000
+      }
+    },
+    "ptx1": {
+      "name": "PTX1",
+      "subjects": [
+        "Taxation of Companies",
+        "Taxation of Individuals",
+        "Extractive Industries Taxation",
+        "Test of Professional Competence"
+      ],
+      "fees": {
+        "oneSubject": 41000,
+        "twoSubjects": 62000,
+        "threeSubjects": 83000,
+        "fourSubjects": 104000
+      }
+    },
+    "ptx2": {
+      "name": "PTX2",
+      "subjects": [
+        "Corporate",
+        "Business Law and Professional Ethics",
+        "Taxation of Companies",
+        "Taxation of Individuals",
+        "Extractive Industries Taxation",
+        "Test of Professional Competence"
+      ],
+      "fees": {
+        "oneSubject": 46000,
+        "twoSubjects": 72000,
+        "threeSubjects": 98000,
+        "fourSubjects": 150000
+      }
+    }
+  },
+  "qualifications": {
+    "ATS": {
+      "name": "ATS graduates, (ATT)/ATS/ATSWA, OND (Accounting & Taxation)",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["No exemptions at this level"],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 55000,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 104000,
+        "ptx2": 150000
+      }
+    },
+
+    "ICAN": {
+      "name": "ICAN (ACA)",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["Taxation of Companies", "Taxation of Individuals"],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals"
+        ]
+      },
+      "exemptionFee": 192500,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["No exam required"],
+        "ptx2": [
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 0,
+        "ptx2": 72000
+      }
+    },
+    "ANAN": {
+      "name": "ANAN(CNA)",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["Taxation of Companies", "Taxation of Individuals"],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals"
+        ]
+      },
+      "exemptionFee": 192500,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["No exam required"],
+        "ptx2": [
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 0,
+        "ptx2": 72000
+      }
+    },
+    "BL": {
+      "name": "BL",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["Taxation of Companies", "Taxation of Individuals"],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals"
+        ]
+      },
+      "exemptionFee": 192500,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["No exam required"],
+        "ptx2": [
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 0,
+        "ptx2": 72000
+      }
+    },
+    "ACCA": {
+      "name": "ACCA",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 145000,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["No exam required"],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 0,
+        "ptx2": 150000
+      }
+    },
+    "CIOT": {
+      "name": "CIOT (UK Institutes of Taxation) Irish Institutes of Taxation",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 145000,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["No exam required"],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 0,
+        "ptx2": 150000
+      }
+    },
+    "CIMA": {
+      "name": "CIMA (UK)",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "exemptionFee": 145000,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["No exam required"],
+        "ptx2": ["Corporate", "Business Law and Professional Ethics"]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 0,
+        "ptx2": 72000
+      }
+    },
+    "ACIB": {
+      "name": "ACIB",
+      "exemptions": {
+        "foundation": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["No exemptions at this level"],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 42500,
+      "requiredExams": {
+        "foundation": ["Introduction to Taxation"],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 30000,
+        "ptx1": 104000,
+        "ptx2": 104000
+      }
+    },
+    "ACS_ACIS_ICSAN": {
+      "name": "ACS/ACIS/ICSAN",
+      "exemptions": {
+        "foundation": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["No exemptions at this level"],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 42500,
+      "requiredExams": {
+        "foundation": ["Introduction to Taxation"],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 30000,
+        "ptx1": 104000,
+        "ptx2": 104000
+      }
+    },
+    "MNIM": {
+      "name": "MNIM",
+      "exemptions": {
+        "foundation": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["No exemptions at this level"],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 42500,
+      "requiredExams": {
+        "foundation": ["Introduction to Taxation"],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 30000,
+        "ptx1": 104000,
+        "ptx2": 150000
+      }
+    },
+    "LLB": {
+      "name": "LLB",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 125000,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["No exam required"],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 0,
+        "ptx2": 150000
+      }
+    },
+    "HND_DEGREE_TAXATION_ACCREDITED": {
+      "name": "HND/Degree Taxation (Accredited Institutions)",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": ["Taxation of Companies", "Taxation of Individuals"]
+      },
+      "exemptionFee": 170000,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["No exam required"],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 0,
+        "ptx2": 104000
+      }
+    },
+    "HND_DEGREE_TAXATION_UNACCREDITED": {
+      "name": "HND/Degree Taxation (Unaccredited Institutions)",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 125000,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["No exam required"],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 0,
+        "ptx2": 150000
+      }
+    },
+    "HND_DEGREE_ACCOUNTING": {
+      "name": "HND/Degree (Accounting)",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 125000,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["No exam required"],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 0,
+        "ptx2": 150000
+      }
+    },
+    "HND_DEGREE_BANKING_FINANCE": {
+      "name": "HND/Degree Banking/Finance",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["No exemptions at this level"],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 55000,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 104000,
+        "ptx2": 150000
+      }
+    },
+    "HND_DEGREE_INSURANCE": {
+      "name": "HND/Degree Insurance",
+      "exemptions": {
+        "foundation": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["No exemptions at this level"],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 42500,
+      "requiredExams": {
+        "foundation": ["Introduction to Taxation"],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 30000,
+        "ptx1": 104000,
+        "ptx2": 150000
+      }
+    },
+    "DEGREE_ECONOMICS": {
+      "name": "Degree in Economics",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["No exemptions at this level"],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 55000,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 104000,
+        "ptx2": 150000
+      }
+    },
+    "HND_DEGREE_BUS_ADMIN": {
+      "name": "HND/Degree Bus. Admin/Bus Management",
+      "exemptions": {
+        "foundation": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["No exemptions at this level"],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 42500,
+      "requiredExams": {
+        "foundation": ["Introduction to Taxation"],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 30000,
+        "ptx1": 104000,
+        "ptx2": 150000
+      }
+    },
+
+    "MASTERS_MGMT_SCIENCE": {
+      "name": "Masters in Programmes in Management Science",
+      "exemptions": {
+        "foundation": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["No exemptions at this level"],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 42500,
+      "requiredExams": {
+        "foundation": ["Introduction to Taxation"],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 30000,
+        "ptx1": 104000,
+        "ptx2": 150000
+      }
+    },
+    "FIRS_ITB_FUNDAMENTAL": {
+      "name": "FIRS/ITB Fundamental Level",
+      "exemptions": {
+        "foundation": ["Introduction to Taxation"],
+        "ptx1": ["No exemptions at this level"],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 22500,
+      "requiredExams": {
+        "foundation": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 60000,
+        "ptx1": 104000,
+        "ptx2": 150000
+      }
+    },
+    "FIRS_ITB_PRELIMINARY": {
+      "name": "FIRS/ITB Preliminary Level",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": ["No exemptions at this level"]
+      },
+      "exemptionFee": 125000,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["No exam required"],
+        "ptx2": [
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 0,
+        "ptx2": 150000
+      }
+    },
+    "FIRS_ITB_FINAL": {
+      "name": "FIRS/ITB Final Level",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": [
+          "Taxation of Companies",
+          "Taxation of Individuals",
+          "Extractive Industries Taxation",
+          "Test of Professional Competence"
+        ],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "exemptionFee": 125000,
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["No exam required"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": 0,
+        "ptx2": ["Variable based on transcript"]
+      }
+    },
+    "OTHER_DEGREES": {
+      "name": "Other Degrees not stated here",
+      "exemptions": {
+        "foundation": ["Variable based on transcript"],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "exemptionFee": "Variable",
+      "requiredExams": {
+        "foundation": ["Variable based on transcript"],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "examFees": {
+        "foundation": ["Variable based on transcript"],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      }
+    },
+    "MASTERS_MGMT_SCIENCE_TAXATION_TRANSCRIPT": {
+      "name": "Masters in Programmes in Management Science with Taxation course in Transcript",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "exemptionFee": "Variable",
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      }
+    },
+    "ALL_OTHER_MASTERS": {
+      "name": "All other Masters' Degree",
+      "exemptions": {
+        "foundation": ["Variable based on transcript"],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "exemptionFee": "Variable",
+      "requiredExams": {
+        "foundation": ["Variable based on transcript"],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "examFees": {
+        "foundation": ["Variable based on transcript"],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      }
+    },
+    "MASTERS_PHD_MGMT_SCIENCE_TAXATION_TRANSCRIPT": {
+      "name": "Masters and PhD in Programmes in Management Science with Taxation Options/Taxation course in Transcript",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "exemptionFee": "Variable",
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      }
+    },
+    "MASTERS_PHD_MGMT_SCIENCE": {
+      "name": "Masters and PhD in Programmes in Management Science",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "exemptionFee": "Variable",
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      }
+    },
+    "ALL_OTHER_MASTERS_DOCTORATE": {
+      "name": "All other Masters and Doctorate Degree in Programmes in Management Science",
+      "exemptions": {
+        "foundation": [
+          "Introduction to Taxation",
+          "Corporate",
+          "Business Law and Professional Ethics",
+          "Principles of Accounting and Economics at Foundation"
+        ],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "exemptionFee": "Variable",
+      "requiredExams": {
+        "foundation": ["No exam required"],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "examFees": {
+        "foundation": 0,
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      }
+    },
+    "ALL_OTHER_DOCTORAL": {
+      "name": "All other Doctoral Degrees",
+      "exemptions": {
+        "foundation": ["Variable based on transcript"],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "exemptionFee": "Variable",
+      "requiredExams": {
+        "foundation": ["Variable based on transcript"],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      },
+      "examFees": {
+        "foundation": ["Variable based on transcript"],
+        "ptx1": ["Variable based on transcript"],
+        "ptx2": ["Variable based on transcript"]
+      }
+    },
+    "ALL_OTHER_PROFESSIONAL_CERTIFICATES": {
+      "name": "All other Professional Certificates not listed",
+      "exemptions": {
+        "foundation": ["Variable based on results"],
+        "ptx1": ["Variable based on results"],
+        "ptx2": ["Variable based on results"]
+      },
+      "exemptionFee": "Variable",
+      "requiredExams": {
+        "foundation": ["Variable based on results"],
+        "ptx1": ["Variable based on results"],
+        "ptx2": ["Variable based on results"]
+      },
+      "examFees": {
+        "foundation": ["Variable based on results"],
+        "ptx1": ["Variable based on results"],
+        "ptx2": ["Variable based on results"]
+      }
+    },
+    "CITN_TAX_ACADEMY": {
+      "name": "CITN TAX ACADEMY (CTA)",
+      "exemptions": {
+        "foundation": ["Variable based on exemptions"],
+        "ptx1": ["Variable based on exemptions"],
+        "ptx2": ["Variable based on exemptions"]
+      },
+      "exemptionFee": "Variable",
+      "requiredExams": {
+        "foundation": ["Variable based on exemptions"],
+        "ptx1": ["Variable based on exemptions"],
+        "ptx2": ["Variable based on exemptions"]
+      },
+      "examFees": {
+        "foundation": ["Variable based on exemptions"],
+        "ptx1": ["Variable based on exemptions"],
+        "ptx2": ["Variable based on exemptions"]
+      }
+    }
+  },
+  "utilities": {
+    "calculateTotalFee": {
+      "description": "Function to calculate total fee including exemption fee and exam fees based on number of subjects to be taken at each level"
+    },
+    "getQualificationDetails": {
+      "description": "Function to retrieve qualification details including exemptions, required exams, and fees"
+    }
+  }
+}
