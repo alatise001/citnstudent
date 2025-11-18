@@ -42,32 +42,33 @@ export default function ExemptionAndExamInfo({
 
   const calculatedFees = selectedQualification
     ? calculateQualificationFees(
-        selectedQualification[1].exemptions as any,
-        selectedQualification[1].requiredExams as any,
-        data.exemptionFees as any,
-        examFeesData as any
+        selectedQualification[1].exemptions,
+        selectedQualification[1].requiredExams,
+        data.exemptionFees,
+        examFeesData
       )
     : null;
 
   // Check for special fee notes (transcript-based or subject-by-subject)
   const specialFeeInfo = selectedQualification
     ? hasSpecialFeeCalculation(
-        selectedQualification[1].exemptions as any,
-        selectedQualification[1].requiredExams as any
+        selectedQualification[1].exemptions,
+        selectedQualification[1].requiredExams
       )
     : { hasSpecial: false, note: null };
 
   // For exemption fees: always show calculated fee if there are valid exemptions
   // Only show special note if ALL levels are special cases
   const hasAnyValidExemptions = selectedQualification
-    ? Object.values(selectedQualification[1].exemptions).some((subjects: any) =>
-        subjects.some(
-          (s: string) =>
-            s !== "No exemptions" &&
-            s !== "By Transcript" &&
-            s !== "Subject by subject exemption" &&
-            s !== "Based on exemptions"
-        )
+    ? Object.values(selectedQualification[1].exemptions).some(
+        (subjects: string[]) =>
+          subjects.some(
+            (s: string) =>
+              s !== "No exemptions" &&
+              s !== "By Transcript" &&
+              s !== "Subject by subject exemption" &&
+              s !== "Based on exemptions"
+          )
       )
     : false;
 
@@ -79,7 +80,7 @@ export default function ExemptionAndExamInfo({
   // For exam fees: show special note if there are any special cases
   const hasAnyValidExams = selectedQualification
     ? Object.values(selectedQualification[1].requiredExams).some(
-        (subjects: any) =>
+        (subjects: string[]) =>
           subjects.some(
             (s: string) =>
               s !== "No exams required" &&

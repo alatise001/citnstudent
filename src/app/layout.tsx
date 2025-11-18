@@ -31,7 +31,7 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <div className="z-0 min-h-screen bg-[url('../../public/citn-logo.png')] bg-center bg-no-repeat">
+          <div className="z-0 min-h-screen bg-[url('/citn-logo.png')] bg-center bg-no-repeat">
             <div className="-z-10 min-h-screen backdrop-blur-md outline-2">
               <header className=" h-[20%] md:h-[30%] flex flex-col overflow-hidden">
                 <Link href={"/"}>
