@@ -29,12 +29,12 @@ import {
 } from "@/components/ui/popover";
 import data from "../../../public/data/citn-exam-database.json";
 
-const qualifications = Object.entries(data.qualifications).map(
-  ([key, value]) => ({
+const qualifications = Object.entries(data.qualifications)
+  .map(([key, value]) => ({
     label: value.name,
     value: value.name,
-  })
-);
+  }))
+  .sort((a, b) => a.label.localeCompare(b.label));
 
 export default function ExemptionAndExamForm({
   setIsQualification,

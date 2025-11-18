@@ -17,9 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CITN Student Exemptions And Examinations",
-  description:
-    "A web application to help CITN students determine their exemptions and required exams based on their qualifications.",
+  title: "CITN Portal",
 };
 
 export default function RootLayout({
@@ -33,7 +31,7 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <div className="z-0 min-h-screen bg-[url('../../public/citn-logo.png')] bg-center bg-no-repeat">
+          <div className="z-0 min-h-screen bg-[url('/citn-logo.png')] bg-center bg-no-repeat">
             <div className="-z-10 min-h-screen backdrop-blur-md outline-2">
               <header className=" h-[20%] md:h-[30%] flex flex-col overflow-hidden">
                 <Link href={"/"}>
@@ -45,11 +43,11 @@ export default function RootLayout({
                     // objectFit="contain"
                   />
                 </Link>
-                <div className="h-[50%] md:h-[80%] bg-[#008f47] flex items-center justify-around text-center py-1">
+                {/* <div className="h-[50%] md:h-[80%] bg-[#008f47] flex items-center justify-around text-center py-1">
                   <p className="font-bold text-[24px] md:text-[32px] text-[#fff] w-[80%]">
                     CITN Student Exemptions And Examinations
                   </p>
-                </div>
+                </div> */}
               </header>
               {children}
             </div>

@@ -8,8 +8,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { date, object } from "zod";
 import Link from "next/link";
+import {
+  calculateQualificationFees,
+  hasSpecialFeeCalculation,
+  formatCurrency,
+} from "@/lib/feeCalculator";
 
 export default function ExemptionAndExamInfo({
   isQualification,
@@ -20,15 +24,77 @@ export default function ExemptionAndExamInfo({
     (value) => value[1]?.name === isQualification
   );
 
+  console.log(selectedQualification);
+
   const exams = Object.entries(selectedQualification?.[1]?.requiredExams || {});
+
   const exemptions = Object.entries(
     selectedQualification?.[1]?.exemptions || {}
   );
-  const totalExemptionFee = selectedQualification?.[1]?.exemptionFee || 0;
 
-  const totalExamFee = Object.entries(
-    selectedQualification?.[1]?.examFees || {}
-  ).reduce((acc, [key, value]) => acc + Number(value), 0);
+  // Calculate fees dynamically using the fee calculator
+  // Transform examLevels structure to match the calculator's expected format
+  const examFeesData = {
+    foundation: data.examLevels.foundation.fees,
+    ptx1: data.examLevels.ptx1.fees,
+    ptx2: data.examLevels.ptx2.fees,
+  };
+
+  const calculatedFees = selectedQualification
+    ? calculateQualificationFees(
+        selectedQualification[1].exemptions,
+        selectedQualification[1].requiredExams,
+        data.exemptionFees,
+        examFeesData
+      )
+    : null;
+
+  // Check for special fee notes (transcript-based or subject-by-subject)
+  const specialFeeInfo = selectedQualification
+    ? hasSpecialFeeCalculation(
+        selectedQualification[1].exemptions,
+        selectedQualification[1].requiredExams
+      )
+    : { hasSpecial: false, note: null };
+
+  // For exemption fees: always show calculated fee if there are valid exemptions
+  // Only show special note if ALL levels are special cases
+  const hasAnyValidExemptions = selectedQualification
+    ? Object.values(selectedQualification[1].exemptions).some(
+        (subjects: string[]) =>
+          subjects.some(
+            (s: string) =>
+              s !== "No exemptions" &&
+              s !== "By Transcript" &&
+              s !== "Subject by subject exemption" &&
+              s !== "Based on exemptions"
+          )
+      )
+    : false;
+
+  const totalExemptionFee =
+    specialFeeInfo.hasSpecial && !hasAnyValidExemptions
+      ? specialFeeInfo.note
+      : calculatedFees?.exemptionFee.total || 0;
+
+  // For exam fees: show special note if there are any special cases
+  const hasAnyValidExams = selectedQualification
+    ? Object.values(selectedQualification[1].requiredExams).some(
+        (subjects: string[]) =>
+          subjects.some(
+            (s: string) =>
+              s !== "No exams required" &&
+              s !== "By Transcript" &&
+              s !== "Subject by subject exemption" &&
+              s !== "Based on exemptions"
+          )
+      )
+    : false;
+
+  const totalExamFee =
+    specialFeeInfo.hasSpecial && !hasAnyValidExams
+      ? specialFeeInfo.note
+      : calculatedFees?.examFee.total || 0;
 
   const examRegSteps = data.examinationApplication.steps;
 
@@ -70,8 +136,12 @@ export default function ExemptionAndExamInfo({
                 ))}
 
                 <div className="flex justify-between mt-6 uppercase font-bold">
-                  <p className="text-base">Total fee</p>
-                  <p className="text-base">₦{totalExemptionFee}</p>
+                  <p className="text-base w-full">Total fee : </p>
+                  <p className="text-base">
+                    {typeof totalExemptionFee === "number"
+                      ? formatCurrency(totalExemptionFee)
+                      : totalExemptionFee}
+                  </p>
                 </div>
               </div>
 
@@ -118,8 +188,13 @@ export default function ExemptionAndExamInfo({
                 ))}
 
                 <div className="flex justify-between mt-6 uppercase font-bold">
-                  <p className="text-base">Total fee</p>
-                  <p className="text-base">₦{totalExamFee}</p>
+                  <p className="text-base w-full">Total fee :</p>
+                  <p className="text-base">
+                    {typeof totalExamFee === "number"
+                      ? formatCurrency(totalExamFee)
+                      : totalExamFee ||
+                        "FEES CALCULATED BASED ON TRANSCRIPT EVALUATION"}
+                  </p>
                 </div>
               </div>
 
@@ -141,11 +216,11 @@ export default function ExemptionAndExamInfo({
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
-              <Link href="/redirection" className="text-[14px] underline">
+              {/* <Link href="/redirection" className="text-[14px] underline">
                 <Button className="self-start mt-10  w-full h-[48px] bg-[#008f47] text-white hover:bg-white hover:border-[#008f47] hover:border hover:text-[#008f47]">
                   Proceed to Redirection
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
