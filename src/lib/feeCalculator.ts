@@ -43,8 +43,8 @@ interface FeeCalculationResult {
  */
 function calculateExemptionFeeForLevel(
   subjects: string[],
-  perPaperFee: number,
-  formFee: number
+  perPaperFee: number
+  // formFee: number
 ): number {
   // Filter out special cases like "No exemptions", "By Transcript", "Subject by subject exemption"
   const validSubjects = subjects.filter(
@@ -57,7 +57,7 @@ function calculateExemptionFeeForLevel(
 
   if (validSubjects.length === 0) return 0;
 
-  return validSubjects.length * perPaperFee + formFee;
+  return validSubjects.length * perPaperFee;
 }
 
 /**
@@ -96,20 +96,20 @@ export function calculateQualificationFees(
   // Calculate exemption fees for each level
   const foundationExemptionFee = calculateExemptionFeeForLevel(
     exemptions.foundation,
-    exemptionFees.foundation.perPaper,
-    exemptionFees.foundation.formFee
+    exemptionFees.foundation.perPaper
+    // exemptionFees.foundation.formFee
   );
 
   const ptx1ExemptionFee = calculateExemptionFeeForLevel(
     exemptions.ptx1,
-    exemptionFees.ptx1.perPaper,
-    exemptionFees.ptx1.formFee
+    exemptionFees.ptx1.perPaper
+    // exemptionFees.ptx1.formFee
   );
 
   const ptx2ExemptionFee = calculateExemptionFeeForLevel(
     exemptions.ptx2,
-    exemptionFees.ptx2.perPaper,
-    exemptionFees.ptx2.formFee
+    exemptionFees.ptx2.perPaper
+    // exemptionFees.ptx2.formFee
   );
 
   // Calculate exam fees for each level
@@ -136,7 +136,7 @@ export function calculateQualificationFees(
 
   // Calculate totals
   const totalExemptionFee =
-    foundationExemptionFee + ptx1ExemptionFee + ptx2ExemptionFee;
+    foundationExemptionFee + ptx1ExemptionFee + ptx2ExemptionFee + 5000;
   const totalExamFee = foundationExamFee + ptx1ExamFee + ptx2ExamFee;
   const grandTotal = totalExemptionFee + totalExamFee;
 
