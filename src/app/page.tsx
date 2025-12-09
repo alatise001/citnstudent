@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Dot } from "lucide-react";
+import { ArrowBigRightDash } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -31,15 +30,20 @@ export default function Home() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-20 w-[80%] md:w-[90%] md:h-[80%]  border-gray-300 rounded-lg shadow-md p-10 ">
           <div className="flex flex-col items-center gap-5 md:gap-15 md:w-[45%]">
             <h1 className="text-[18px] md:text-[22px] capitalize text-center">
-              Find out if you are <br />
-              eligible for <b>CITN Direct</b> Membership
+              Check Your Eligibility for Direct Membership
+            </h1>
+
+            <h1 className="text-[18px] md:text-[22px] capitalize text-center">
+              Find out whether you qualify for <b>CITN Direct Membership</b>{" "}
+              based on your academic and professional credentials.
             </h1>
             <Link
               href="https://citnevents.org/citndirecteligibility/"
-              className="text-[14px] underline mb-5"
+              className="text-[14px] underline flex items-center justify-center gap-3 mb-5"
             >
+              <ArrowBigRightDash />
               <p className="text-center text-[16px] md:text-[20px] hover:bg-white hover:text-[#008f47]">
-                Proceed to check <b>Eligibility</b>
+                Click to Check <b>Eligibility</b>
               </p>
             </Link>
           </div>
@@ -54,12 +58,18 @@ export default function Home() {
             </h1>
 
             <h1 className="text-[18px] md:text-[22px] capitalize text-center">
-              Check your <br /> <b>Exemptions </b> and <b>Examinations</b>{" "}
-              requirements
+              You may still join the Institute through our structured pathway.
+              Review your applicable{" "}
+              <b>Exemptions and Examination Requirements</b> under the CITN
+              Professional Examination Scheme.
             </h1>
-            <Link href="/information" className="text-[14px] underline mb-5">
+            <Link
+              href="/information"
+              className="text-[14px] underline flex items-center justify-center gap-3 mb-5"
+            >
+              <ArrowBigRightDash />
               <p className="text-center text-[16px] md:text-[20px] hover:bg-white hover:text-[#008f47]">
-                Proceed to Exemptions and Examinations Requirements
+                Click to View <b>Exemptions & Examination Pathways</b>
               </p>
             </Link>
           </div>

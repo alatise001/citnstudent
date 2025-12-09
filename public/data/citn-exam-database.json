@@ -804,14 +804,33 @@
   "examinationApplication": {
     "title": "STUDENT'S EXAMINATION APPLICATION",
     "steps": [
+      "Log on to www.citn.org.",
+      "Go to Member Login.",
+      "Log in using your username/membership number/email address and password.",
+      "Click on “My Membership” on your profile.",
+      "Click on “Apply for Examination” on the right-hand side and fill out the form.",
+      "Click “Proceed to Payment” to generate your reference code.",
+      "Make your payment using the available online payment platforms."
+    ],
+    "website": "www.citn.org",
+    "paymentMethod": "Globalpay"
+  },
+
+  "exemptionApplication": {
+    "title": "STUDENT'S EXAMINATION APPLICATION",
+    "steps": [
       "Log on to www.citn.org",
-      "Go to member login",
-      "Log in with username/membership no/e-mail address and password",
-      "Click on \"My membership\" on your profile",
-      "Click on \"apply for examination\" on the right hand side and fill the form",
-      "Click on Proceed to Payment to generate your reference code",
-      "Click on Proceed to Payment to generate your reference code",
-      "Pay online via Globalpay"
+      "Go to Member Login",
+      "Log in using your username/membership number/email address and password",
+      "Click on \"My Membership\" on your profile",
+      "Click on \"Apply for Exemption\" on the right-hand side and fill out the form",
+      "Select your qualification from the dropdown menu",
+      "Complete the qualification claims section",
+      "Upload your certificates in PDF format",
+      "Click Save",
+      "After saving, you will see a list of your exemptions",
+      "Click on \"Proceed to Payment\" to generate your reference code",
+      "Make your payment using the available online payment platform"
     ],
     "website": "www.citn.org",
     "paymentMethod": "Globalpay"

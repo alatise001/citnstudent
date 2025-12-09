@@ -97,6 +97,7 @@ export default function ExemptionAndExamInfo({
       : calculatedFees?.examFee.total || 0;
 
   const examRegSteps = data.examinationApplication.steps;
+  const exemptionRegSteps = data.exemptionApplication.steps;
 
   return (
     <>
@@ -148,10 +149,10 @@ export default function ExemptionAndExamInfo({
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
                   <AccordionTrigger className="mt-5">
-                    STUDENT&apos;S EXAMINATION APPLICATION PROCESS
+                    STUDENT&apos;S EXEMPTION APPLICATION PROCESS
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-4 text-balance">
-                    {examRegSteps.map((step, index) => (
+                    {exemptionRegSteps.map((step, index) => (
                       <div
                         key={index}
                         className="flex items-center font-semibold gap-1"
